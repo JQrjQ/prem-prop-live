@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 /*Your Custom CSS Goes here*/
+/* { border: 1px solid yellow; }*/
 
 h1 {
   @apply text-4xl tracking-tighter mb-3 text-center lg:text-7xl;
@@ -18,3 +19,100 @@ body :not(pre) > code[class*="language-"],
 body pre[class*="language-"] {
   @apply bg-gray-800;
 }
+
+/* Youtube*/
+  .youtube-player {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #fff;
+    margin: 0px;
+  }
+  
+  
+  .youtube-player iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: transparent;
+  }
+  
+  .youtube-player img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: block;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 100%;
+    width: 100%;
+    position: ;
+    right: 0;
+    top: 0;
+    border: none;
+    height: auto;
+    cursor: pointer;
+    transition: 0.4s all;
+  }
+  
+  .youtube-player img:hover {
+    -webkit-filter: brightness(75%);
+  }
+  
+  .youtube-player .play {
+    height: 72px;
+    width: 72px;
+    left: 50%;
+    top: 50%;
+    margin-left: -36px;
+    margin-top: -36px;
+    position: absolute;
+    background: url('//i.imgur.com/TxzC70f.png') no-repeat;
+    cursor: pointer;
+  }
+
+  /*Subscribe Form*/
+  .subcribe-form form input{
+    height: 50px;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    --tw-text-opacity: 1;
+    color: rgb(22 28 45 / var(--tw-text-opacity));
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+  }
+  [dir="ltr"] .subcribe-form form input{
+    padding-right: 10rem;
+    padding-left: 1.5rem;
+  }
+  [dir="rtl"] .subcribe-form form input{
+    padding-left: 10rem;
+    padding-right: 1.5rem;
+  }
+  .dark .subcribe-form form input{
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+  .subcribe-form form .btn{
+    position: absolute;
+    top: 2px;
+    height: 46px;
+    right:3px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .container{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
