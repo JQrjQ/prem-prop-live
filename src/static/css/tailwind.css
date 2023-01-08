@@ -5,7 +5,9 @@
 @tailwind utilities;
 
 /*Your Custom CSS Goes here*/
-/*{ border: 1px solid yellow; }*/
+* {
+  border: 1px solid yellow;
+}
 
 body {
   font-family: "League Spartan", sans-serif;
